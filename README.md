@@ -6,7 +6,25 @@ Just my personal Uptime Kuma theme.
 
 How to install the theme.
 
-1. Go to the your status page `Edit Status Page > Custom CSS`
+1. Go to the your status page and click `Edit Status Page`, you need to be logged on the dashboard for this button to appear.
+
+1. Paste this HTML code into the Footer Text input:
+
+   ```html
+   <ul class="circles">
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+   </ul>
+   ```
+
 1. Paste this CSS code into the Custom CSS input:
 
    ```css
@@ -43,9 +61,7 @@ Here are the steps to run the project locally.
    npm run dev
    ```
 
-1. Go to the your status page `Edit Status Page > Custom CSS`
-
-1. Paste the development CSS code into the Custom CSS input:
+1. Same steps as the installation, except for the Custom CSS input, you need to use the local url instead.
 
    ```css
    @import url('http://localhost:3000/public/style.css');
