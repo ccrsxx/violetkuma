@@ -22,13 +22,13 @@ Here are the steps to run the project locally.
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/ccrsxx/violetfin.git
+   git clone https://github.com/ccrsxx/violetkuma.git
    ```
 
 1. Change directory to the project
 
    ```bash
-   cd violetfin
+   cd violetkuma
    ```
 
 1. Install dependencies
