@@ -1,0 +1,2 @@
+npm run build:commit
+npx lint-staged

@@ -1,0 +1,32 @@
+{
+  "name": "jellyfin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently npm:watch npm:serve",
+    "serve": "serve .",
+    "build": "sass src/index.scss:public/style.css",
+    "watch": "sass --watch src/index.scss:public/style.css",
+    "format": "prettier --write .",
+    "format:ci": "prettier --check .",
+    "prepare": "husky",
+    "build:commit": "npm run build && git add public/*"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "keywords": [],
+  "author": "ccrsxx",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "concurrently": "^8.2.2",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.70.0",
+    "serve": "^14.2.1"
+  }
+}
